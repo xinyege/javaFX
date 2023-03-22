@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="992.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.example.demo.projectController">
+    <top>
+        <SplitPane dividerPositions="0.5" prefHeight="109.0" prefWidth="992.0" BorderPane.alignment="CENTER">
+            <items>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                <SplitPane dividerPositions="0.5" nodeOrientation="LEFT_TO_RIGHT" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="100.0" prefWidth="160.0" >
+                            <children>
+                                <Button fx:id="facebookBoutton" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="16.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="99.0" text="Suivez-nous &#10;sur Facebook" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" />
+                                <Button fx:id="fidélitéBoutton" layoutX="132.0" layoutY="25.0" mnemonicParsing="false" text="Mes point fidélité" textAlignment="CENTER" />
+                                <Button fx:id="commentaireBoutton" contentDisplay="CENTER" layoutX="255.0" layoutY="25.0" mnemonicParsing="false" text="Commentaire" textAlignment="CENTER" />
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                            <children>
+                                <Button fx:id="LoginBoutton" alignment="CENTER" graphicTextGap="5.0" layoutX="683.0" layoutY="15.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="87.0" text="login" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" />
+                                <Button fx:id="MemusBoutton" layoutX="126.0" layoutY="25.0" mnemonicParsing="false"  text="Memus" textAlignment="CENTER" />
+                                <Button fx:id="SuccurcalesBoutton" layoutX="227.0" layoutY="25.0" mnemonicParsing="false"  text="Succurcales" textAlignment="CENTER" />
+                                <Button fx:id="RéservationBoutton" alignment="CENTER" contentDisplay="CENTER" layoutX="337.0" layoutY="25.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="95.0" text="Réservation" textAlignment="CENTER" />
+                                <Button fx:id="CommandeBoutton" alignment="CENTER" layoutX="454.0" layoutY="25.0" mnemonicParsing="false" text="Commande en ligne" textAlignment="CENTER" />
+                            </children>
+                        </AnchorPane>
+                    </items>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </SplitPane>
+            </items>
+        </SplitPane>
+    </top>
+    <left>
+        <AnchorPane prefHeight="459.0" prefWidth="624.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="136.0" layoutY="75.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="309.0" text="Commande en ligne" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="136.0" layoutY="185.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="312.0" text="Memus" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button layoutX="136.0" layoutY="295.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="314.0" text="Succurcales" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
